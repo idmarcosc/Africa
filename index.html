@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>África</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/scripts/parallaxEffect.js"></script>
 </head>
-<body>
+<body onload="parallaxEffect()">
     <header class="header">
         <a href="#" class="logo">Logo</a>
         <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
+            <ul class="navList">
+                <li><a href="#" class="active">Home</a></li>
                 <li><a href="#">Sobre</a></li>
                 <li><a href="#">Contato</a></li>
             </ul>
@@ -22,11 +23,11 @@
         <section class="parallax">
             <h1 id="text">ÁFRICA</h1>
             <img src="assets/img/ceu.png" alt="Céu" id="ceu">
-            <img src="assets/img/nuvens.png" alt="Céu" id="Nuvens">
-            <img src="assets/img/montanhas.png" alt="Céu" id="Montanhas">
-            <img src="assets/img/arvores.png" alt="Céu" id="Arvores">
-            <img src="assets/img/terra.png" alt="Céu" id="Chão de terra">
-            <img src="assets/img/zebras.png" alt="Céu" id="Zebras">
+            <img src="assets/img/nuvens.png" alt="Céu" id="nuvem">
+            <img src="assets/img/montanhas.png" alt="Céu" id="montanha">
+            <img src="assets/img/arvores.png" alt="Céu" id="arvore">
+            <img src="assets/img/terra.png" alt="Céu" id="terra">
+            <img src="assets/img/zebras.png" alt="Céu" id="zebra">
         </section>
         <section class="content">
             <h2>Parallax Effects</h2>
@@ -73,6 +74,5 @@
                 </p>
         </section>
     </main>
-    
 </body>
 </html>
