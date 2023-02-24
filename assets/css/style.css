@@ -188,4 +188,8 @@ main {
         position: relative;   
 
     }
+
+    .navBar {
+        display: none;
+    }
 }
