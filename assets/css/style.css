@@ -7,6 +7,7 @@
 }
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -27,7 +28,7 @@ main {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 30px 100px;
+    padding: 3rem 10rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -57,7 +58,7 @@ main {
     text-decoration: none;
     padding: 0.6rem 1.5rem;
     color: #fff;
-    border-radius: 20px;
+    border-radius: 2rem;
 }
 
 .navList a:hover,
@@ -77,7 +78,7 @@ main {
 }
 
 .parallax {
-    min-width: 800px;
+    min-width: 700px;
     position: relative;
     width: 100%;
     height: 100%;
@@ -102,6 +103,7 @@ main {
     z-index: 10;
 }
 #sol {
+    z-index: 8;
     position: absolute;
     transform: translate(250px, 200px)
 }
@@ -120,7 +122,6 @@ main {
 }
 #text {
     position: absolute;
-    white-space: nowrap;
     font-size: 5vw;
     z-index: 9;
     color: white;
@@ -128,6 +129,19 @@ main {
     transform: translateY(-30vh)
 }
 
+#btn {
+    text-decoration: none;
+    color: #585757;
+    background-color: #fff;
+    font-size: 1vw;
+    letter-spacing: 0.3rem;
+    z-index: 0;
+    padding: 0.5vw 1.8vw;
+    border-radius: 2rem;
+    position: absolute;
+    transform: translateY(-15vh);
+    cursor: pointer;
+}
 .content {
     position: absolute;   
     padding: 10rem;
@@ -143,4 +157,27 @@ main {
 .content p {
     font-size: 1.8rem;
     color: #fff;
+}
+
+
+@media (max-width: 1100px) {
+    #text {
+        font-size: 5rem;
+       }
+
+    #btn {
+        font-size: 1.6rem;
+        letter-spacing: 0.3rem;
+        padding: 0.7rem 1.8rem;
+        border-radius: 2rem;
+        transform: translateY(-18vh);
+    }
+    
+    .header {
+        padding: 3rem 2rem;
+        transition: .5s ease;
+    }
+    .content {
+        padding: 5rem 3rem;
+    }
 }
