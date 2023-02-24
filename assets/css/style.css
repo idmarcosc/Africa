@@ -13,6 +13,7 @@ html {
 body {
     font-size: 1.6rem;
     height: 100vh;
+    width: 100vw;
     background: linear-gradient(#d88727, #fac98e);
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
@@ -179,5 +180,13 @@ main {
     }
     .content {
         padding: 5rem 3rem;
+        width: 100vw;
+    }
+}
+
+
+@media (max-width: 700px) {
+    .content { 
+        width: 100vw;
     }
 }
